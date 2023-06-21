@@ -1,4 +1,3 @@
-'use client'
 import React, { useEffect, useState } from 'react'
 import { MoveRight, Figma, LucideIcon, Chrome } from 'lucide-react'
 import GuestUser from '../../public/guest-user.webp'
@@ -27,7 +26,7 @@ const TodayClasses = () => {
         status: 'Ongoing',
         picture: GuestUser,
         author: 'User',
-        color: 'main-green'
+        color: 'green'
       },
       {
         id: '1002',
@@ -36,7 +35,7 @@ const TodayClasses = () => {
         status: '2:00 PM',
         picture: GuestUser,
         author: 'User',
-        color: 'main-purple'
+        color: 'purple'
       }
     ])
   }, [])

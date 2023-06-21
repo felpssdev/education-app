@@ -17,7 +17,7 @@ interface ClassesCardProps {
 
 const ClassesCard = ({ info: { title, icon, status, picture, author, color } }: ClassesCardProps) => {
   return (
-    <div className={`bg-${color} w-[95%] h-[20%] rounded-lg p-4 flex flex-col`}>
+    <div className={`bg-main-${color} w-[95%] h-[20%] rounded-lg p-4 flex flex-col`}>
       <div>
         <p className='font-bold text-lg'>{title}</p>
       </div>

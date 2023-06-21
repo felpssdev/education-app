@@ -12,7 +12,7 @@ type CardProps = {
 
 const Card = ({ info: { title, days, streak, color } }: CardProps) => {
   return (
-    <div className={`h-[50%] mt-2 rounded-[20px] p-2 w-[40%] bg-${color} flex flex-col justify-between`}>
+    <div className={`h-[50%] mt-2 rounded-[20px] p-2 w-[40%] bg-main-${color} flex flex-col justify-between`}>
       <h2 className='pt-4 ml-2 font-bold text-main-black text-sm h-10'>{title}</h2>
       <div>
         <h1 className='pt-4 ml-2 font-bold text-main-black text-[40px]'>{days}</h1>
