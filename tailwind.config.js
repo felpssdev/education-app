@@ -16,10 +16,10 @@ module.exports = {
       },
       screens: {
         'xxs': { 'min': '350px', 'max': '374px' },
-        // => @media (min-width: 640px and max-width: 767px) { ... },
+        // => @media (min-width: 350px and max-width: 374px) { ... },
 
         'xs': { 'min': '375px', 'max': '639px' },
-        // => @media (min-width: 640px and max-width: 767px) { ... }
+        // => @media (min-width: 375px and max-width: 639px) { ... }
 
         'sm': { 'min': '640px', 'max': '767px' },
         // => @media (min-width: 640px and max-width: 767px) { ... }
@@ -38,6 +38,6 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require('tailwind-scrollbar-hide')],
   safelist: ['bg-main-yellow', 'bg-main-green', 'bg-main-black', 'bg-main-white', 'bg-main-purple']
 }
