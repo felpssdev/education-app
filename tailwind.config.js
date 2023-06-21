@@ -39,5 +39,6 @@ module.exports = {
     },
   },
   plugins: [require('tailwind-scrollbar-hide')],
-  safelist: ['bg-main-yellow', 'bg-main-green', 'bg-main-black', 'bg-main-white', 'bg-main-purple']
+  safelist: ['bg-main-yellow', 'bg-main-green', 'bg-main-black', 'bg-main-white', 'bg-main-purple'],
+  darkMode: 'class'
 }

@@ -19,7 +19,7 @@ const ClassesCard = ({ info: { title, icon, status, picture, author, color } }: 
   return (
     <div className={`bg-main-${color} w-[95%] h-[20%] rounded-lg p-4 flex flex-col`}>
       <div>
-        <p className='font-bold text-lg'>{title}</p>
+        <p className='font-bold text-lg text-main-black'>{title}</p>
       </div>
       <div className='flex mt-4 gap-2 text-gray-500 font-semibold'>
         <span>{status}</span>

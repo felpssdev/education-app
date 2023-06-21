@@ -20,22 +20,22 @@ export default function Home() {
       {
         id: '10001',
         title: 'Days in tranning',
-        days: '255',
-        streak: '24 days in a row',
+        days: '0',
+        streak: '0 days in a row',
         color: 'yellow'
       },
       {
         id: '10002',
-        title: 'Completed courses',
-        days: '12',
-        streak: '2 in this month',
+        title: 'Completed meals',
+        days: '0',
+        streak: '0 in this month',
         color: 'green'
       }
     ])
   }, [])
 
   return (
-    <main className="w-full h-full bg-main-white flex flex-col mb-36">
+    <main className="w-full h-full bg-main-white flex flex-col pb-36">
       <Hero />
       <h1 className='font-bold text-main-black text-[36px] w-[80%] px-10 xxs:w-[100%]'>Nice streak, User!</h1>
       <div className='flex gap-[2%] justify-center'>
