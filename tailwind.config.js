@@ -20,6 +20,12 @@ module.exports = {
         'main-purple': '#ecd9f7'
       },
       screens: {
+        'xxs': { 'min': '350px', 'max': '374px' },
+        // => @media (min-width: 640px and max-width: 767px) { ... },
+
+        'xs': { 'min': '375px', 'max': '639px' },
+        // => @media (min-width: 640px and max-width: 767px) { ... }
+
         'sm': { 'min': '640px', 'max': '767px' },
         // => @media (min-width: 640px and max-width: 767px) { ... }
 

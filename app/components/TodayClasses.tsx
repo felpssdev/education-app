@@ -42,7 +42,7 @@ const TodayClasses = () => {
   }, [])
 
   return (
-    <div className='self-center w-[80%] p-4 mt-6 rounded-[20px] h-[300px] bg-gray-400/10'>
+    <div className='self-center w-[82%] p-4 mt-6 rounded-[20px] h-[300px] bg-gray-400/10'>
       <div className='flex justify-between items-center p-2'>
         <h1 className='font-bold text-lg text-main-black'>Today classes</h1>
         <MoveRight className='bg-main-white p-2 flex items-center rounded-full w-10 h-10' />
