@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { MoveRight, Figma, LucideIcon, Chrome } from 'lucide-react'
+import { MoveRight, Figma, LucideIcon, Chrome, Book } from 'lucide-react'
 import GuestUser from '../../public/guest-user.webp'
 import { StaticImageData } from 'next/image'
 import ClassesCard from './ClassesCard'
@@ -36,12 +36,21 @@ const TodayClasses = () => {
         picture: GuestUser,
         author: 'User',
         color: 'purple'
+      },
+      {
+        id: '1003',
+        title: 'Studies',
+        icon: Book,
+        status: '4:00 PM',
+        picture: GuestUser,
+        author: 'User',
+        color: 'yellow'
       }
     ])
   }, [])
 
   return (
-    <div className='self-center w-[82%] p-4 mt-6 rounded-[20px] h-[300px] bg-gray-400/10'>
+    <div className='self-center w-[82%] p-4 mt-6 rounded-[20px] h-[60%] bg-gray-400/10'>
       <div className='flex justify-between items-center p-2'>
         <h1 className='font-bold text-lg text-main-black'>Today classes</h1>
         <MoveRight className='bg-main-white p-2 flex items-center rounded-full w-10 h-10' />
