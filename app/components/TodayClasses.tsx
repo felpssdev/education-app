@@ -3,6 +3,7 @@ import { MoveRight, Figma, LucideIcon, Chrome, Book, BookMarked } from 'lucide-r
 import GuestUser from '../../public/guest-user.webp'
 import { StaticImageData } from 'next/image'
 import ClassesCard from './ClassesCard'
+import 'animate.css'
 
 type Classes = {
   id: string;
@@ -59,10 +60,10 @@ const TodayClasses = () => {
   }, [])
 
   return (
-    <div className='self-center w-[82%] p-4 mt-6 rounded-[20px] h-[60%] bg-gray-400/10'>
+    <div className='self-center w-[82%] p-4 mt-6 rounded-[20px] h-[60%] bg-gray-400/10 animate__animated animate__fadeInRight'>
       <div className='flex justify-between items-center p-2'>
-        <h1 className='font-bold text-lg text-main-black'>Today classes</h1>
-        <MoveRight className='bg-main-white p-2 flex items-center rounded-full w-10 h-10 text-main-black' />
+        <h1 className='font-bold text-lg text-main-black dark:text-darkmode-white'>Today classes</h1>
+        <MoveRight className='bg-main-white p-2 flex items-center rounded-full w-10 h-10 text-main-black dark:bg-darkmode-white' />
       </div>
       <div className='flex flex-col items-center gap-4'>
         {classes && classes.map((classInfo) => <ClassesCard key={classInfo.id} info={classInfo} />)}

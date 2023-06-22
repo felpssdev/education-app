@@ -12,7 +12,12 @@ module.exports = {
         'main-green': '#deecec',
         'main-black': '#242424',
         'main-white': '#ffffff',
-        'main-purple': '#ecd9f7'
+        'main-purple': '#ecd9f7',
+        'darkmode-black': '#1E1E1E',
+        'darkmode-white': '#CCCCCC',
+        'darkmode-yellow': '#c7b285',
+        'darkmode-green': '#94a492',
+        'darkmode-purple': '#8e65a1'
       },
       screens: {
         'xxs': { 'min': '350px', 'max': '374px' },
@@ -39,6 +44,6 @@ module.exports = {
     },
   },
   plugins: [require('tailwind-scrollbar-hide')],
-  safelist: ['bg-main-yellow', 'bg-main-green', 'bg-main-black', 'bg-main-white', 'bg-main-purple'],
+  safelist: ['bg-main-yellow', 'bg-main-green', 'bg-main-black', 'bg-main-white', 'bg-main-purple', 'bg-darkmode-yellow', 'bg-darkmode-green', 'bg-darkmode-purple'],
   darkMode: 'class'
 }

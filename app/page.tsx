@@ -35,13 +35,13 @@ export default function Home() {
   }, [])
 
   return (
-    <main className="w-full h-full bg-main-white flex flex-col pb-36">
+    <main className="w-full h-full bg-main-white flex flex-col pb-36 dark:bg-darkmode-black">
       <Hero />
-      <h1 className='font-bold text-main-black text-[36px] w-[80%] px-10 xxs:w-[100%]'>Nice streak, User!</h1>
+      <h1 className='font-bold text-main-black text-[36px] w-[80%] px-10 xxs:w-[100%] dark:text-darkmode-white'>Nice streak, User!</h1>
       <div className='flex gap-[2%] justify-center'>
         {infos && infos.map((info) => <Card key={info.id} info={info} />)}
       </div>
-      <TodayClasses />
+      {infos.length > 0 && <TodayClasses />}
     </main>
   )
 }
